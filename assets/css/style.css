@@ -1,0 +1,48 @@
+.container {
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    
+}
+.title-background {
+    background: green;
+    width: 900px;
+    height: 100px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.game {
+    background: #666666;
+    height: 500px;
+    width: 820px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding-top: 30px;
+}
+
+.game-content {
+    background: blue;
+
+    margin-left: auto;
+    margin-right: auto; 
+    height: 450px;
+    width: 750px;  
+    align-content: center; 
+}
+
+/* button */
+
+#startBtn {
+    margin-top: 100px;
+    width: 200px;
+    padding: 5px;
+    font-size: 40px;
+
+}
