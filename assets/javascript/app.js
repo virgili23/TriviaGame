@@ -20,31 +20,31 @@ var questions = [
     {
         question: "What color are bananas?",
         choices: ["red","blue", "green", "yellow"],
-        answer: 3
+        answer: "yellow"
     },
 
     {
         question: "What color are oranges?",
         choices: ["red", "green", "orange", "blue"],
-        answer: 2
+        answer: "orange"
     },
 
     {
         question: "What color are apples?",
         choices: ["red", "green", "orange", "blue"],
-        answer: 0
+        answer: "red"
     },
 
     {
         question: "What color are pears?",
         choices: ["red", "green", "orange", "blue"],
-        answer: 1
+        answer: "green"
     },
 
     {
         question: "What color are strawberries?",
         choices: ["red", "green", "orange", "blue"],
-        answer: 0
+        answer: "red"
     }
 
 ];
@@ -95,7 +95,7 @@ var beginQuestions = function () {
 
     // Action Phase
     // Question:
-    $("#question").html(questions[0].question);
+    $("#question").html("<h2>" + questions[0].question + "</h2>");
    
    
     // Choices:
@@ -103,7 +103,7 @@ var beginQuestions = function () {
     for (i=0; i < 4; i++ ) {
         
         var choices = $('<div>');
-        $("#choices-div").append(questions[0].choices[i]);
+        $("#choices-div").append("<h3>" + questions[0].choices[i] + "</h3>");
         $("#choices-div").append(choices);
     } 
 
@@ -112,13 +112,23 @@ var beginQuestions = function () {
 
 // function for clicking and answering
 var answer = function() {
-    var rightAnswers = questions[0].answer;
+    var rightAnswer = questions[0].answer;
     $("#choices-div").on("click", function (){
-        
+        if (rightAnswer) {
+            correctAnswer++
+        } else {
+            incorrectAnswer++
+        }
 
         $("#game-content").hide();
     });
 } // <---- End of function 
+
+console.log(correctAnswer);
+console.log(incorrectAnswer);
+
+// I need to find a way to make it so I'm able to click on these self generated divs to return a correct,
+// or incorrect answer
 
 
 
