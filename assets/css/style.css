@@ -1,48 +1,82 @@
-.container {
-    text-align: center;
+body {
+    background-image: url('../images/background.jpg');
+   
 }
-
-.title{
+#wrapper {
     text-align: center;
     
 }
-.title-background {
-    background: green;
+a {
+    color: rgba(0, 0, 0, 0.678);
+}
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+h1{
+    padding: 20px;
+    background: yellow;
+    border: 2px solid blue;
+    border-radius: 3px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color: black;
+  
+}
+#title {
+    text-align: center;
+    padding: 10px;
+    color: purple;
+    margin-bottom: 30px;
+}
+
+#subwrapper{
+    text-align: center;
+    background: rgb(250, 238, 74);
     width: 900px;
-    height: 100px;
+    height: 500px;
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid black;
+    border-radius: 3px;
     
 }
 
-.game {
-    background: #666666;
-    height: 500px;
-    width: 820px;
-    margin-top: 10px;
+img {
+    
+    align-content: center;
+}
+
+.btn, .btn-primary, #reset {
+    background: green;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+.answer-button {
+    margin: 10px;
+    padding: 10px;
+    background: purple;
+    color: white;
+    border: 1px solid purple;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    width: 150px;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
-    padding-top: 30px;
+    cursor: pointer;
+    transition: 0.2s;
 }
-
-.game-content {
-    background: blue;
-
-    margin-left: auto;
-    margin-right: auto; 
-    height: 450px;
-    width: 750px;  
-    align-content: center; 
-}
-
-/* button */
-
-#startBtn {
-    margin-top: 100px;
-    width: 200px;
-    padding: 5px;
-    font-size: 40px;
-
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
